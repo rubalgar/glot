@@ -40,7 +40,7 @@
 	<li><a href="gAcumulado/NACIONAL EXTRAORDINARIO">Acumulado NEX</a></li>
 	<br>
 	<br>
-		<li><a href="gFinanzasTotal">Finanzas Aleatoria</a></li>
+		<li><a href="gFinanzasTotal">Finanzas Aleatoria 2</a></li>
 	</ul>
 </body>
 </html>
