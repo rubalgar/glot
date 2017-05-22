@@ -15,7 +15,7 @@ public interface FinanzaMapper {
 			@Result(property = "planPensiones", column = "plan_pensiones"), @Result(property = "hipoteca", column = "hipoteca"),
 			@Result(property = "deudas", column = "deudas"),})
 
-	@Select("SELECT fecha,ahorro,deposito_coinc,deposito_ing,cuenta_naranja,cuenta_nomina,plan_pensiones,hipoteca,deudas FROM registros order by fecha")
+	@Select("SELECT fecha,ahorro,deposito_coinc,deposito_ing,cuenta_naranja,cuenta_nomina,plan_pensiones,hipoteca,deudas FROM finanzas order by fecha")
 	List<Finanza> getFinanzas();
 	
 }
