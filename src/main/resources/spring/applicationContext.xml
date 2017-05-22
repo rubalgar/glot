@@ -35,7 +35,7 @@
 
     <bean id="finanzaMapper" class="org.mybatis.spring.mapper.MapperFactoryBean">
         <property name="mapperInterface" value="com.ralonso.glot.mappers.FinanzaMapper" />
-        <property name="sqlSessionFactory" ref="sqlSessionFactoryFinanzas" />
+        <property name="sqlSessionFactory" ref="sqlSessionFactoryLots" />
     </bean>
 	
 
