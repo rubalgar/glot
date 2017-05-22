@@ -19,7 +19,7 @@
 
 
     <bean id="agregadoMapper" class="org.mybatis.spring.mapper.MapperFactoryBean">
-        <property name="mapperInterface" value="com.dycec.glot.mappers.AgregadoMapper" />
+        <property name="mapperInterface" value="com.ralonso.glot.mappers.AgregadoMapper" />
         <property name="sqlSessionFactory" ref="sqlSessionFactoryLots" />
     </bean>
 	
@@ -34,7 +34,7 @@
 
 
     <bean id="finanzaMapper" class="org.mybatis.spring.mapper.MapperFactoryBean">
-        <property name="mapperInterface" value="com.dycec.glot.mappers.FinanzaMapper" />
+        <property name="mapperInterface" value="com.ralonso.glot.mappers.FinanzaMapper" />
         <property name="sqlSessionFactory" ref="sqlSessionFactoryFinanzas" />
     </bean>
 	
