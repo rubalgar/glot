@@ -24,7 +24,7 @@
     </bean>
 	
 
-    <bean id="agregadoService" class="com.dycec.glot.services.AgregadoService">
+    <bean id="agregadoService" class="com.ralonso.glot.services.AgregadoService">
         <property name="agregadoMapper" ref="agregadoMapper" />
     </bean>
 
@@ -39,7 +39,7 @@
     </bean>
 	
 
-    <bean id="finanzaService" class="com.dycec.glot.services.FinanzaService">
+    <bean id="finanzaService" class="com.ralonso.glot.services.FinanzaService">
         <property name="finanzaMapper" ref="finanzaMapper" />
     </bean>
     
