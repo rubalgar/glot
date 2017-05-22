@@ -27,7 +27,7 @@
 			</div>
 			<ul class="nav navbar-nav">
 				<li class="dropdown"><a class="dropdown-toggle"
-					data-toggle="dropdown" class"active" href="#">Totales <span class="caret"></span></a>
+					data-toggle="dropdown" class="active" href="#">Totales <span class="caret"></span></a>
 					<ul class="dropdown-menu">
 						<li><a href="#">Page 1-1</a></li>
 						<li><a href="#">Page 1-2</a></li>
