@@ -11,6 +11,7 @@ import javax.servlet.http.HttpServletResponse;
 
 import org.apache.commons.logging.Log;
 import org.apache.commons.logging.LogFactory;
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.context.ApplicationContext;
 import org.springframework.context.support.ClassPathXmlApplicationContext;
 import org.springframework.stereotype.Controller;
@@ -29,6 +30,10 @@ import com.ralonso.glot.util.Utils;
 public class GrafsController {
 
 	protected final Log logger = LogFactory.getLog(getClass());
+	
+	 @Autowired
+	 private FinanzaService finanzaService;
+	
 
 	@RequestMapping(value = "/gImporteMensual")
 	public ModelAndView hImporteMensual(HttpServletRequest request, HttpServletResponse response)
@@ -369,8 +374,8 @@ public class GrafsController {
 	@RequestMapping(value = "/gFinanzasTotal")
 	public ModelAndView hFinanzasTotal(HttpServletRequest request, HttpServletResponse response)
 			throws ServletException, IOException {
-		ApplicationContext context = new ClassPathXmlApplicationContext("spring/applicationContext.xml");
-		FinanzaService finanzaService = (FinanzaService) context.getBean("finanzaService");
+		/*ApplicationContext context = new ClassPathXmlApplicationContext("spring/applicationContext.xml");
+		FinanzaService finanzaService = (FinanzaService) context.getBean("finanzaService");*/
 		Map<String, Object> myModel = new HashMap<String, Object>();
 		
 		List<Finanza> tList = finanzaService.obtenerFinanzas();

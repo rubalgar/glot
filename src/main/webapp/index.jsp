@@ -46,7 +46,7 @@
 						<li><a href="#">Page 1-3</a></li>
 					</ul></li>
 				
-				<li><a href="gFinanzasTotal">Finanzas</a></li>
+				<li><a href="gFinanzasTotal">Finanzas2</a></li>
 			</ul>
 		</div>
 	</nav>
