@@ -50,9 +50,7 @@
 			</ul>
 		</div>
 	</nav>
-	<p>
-		<c:out value="${model.now}" />
-	</p>
+
 	<br>
 	<div id="chart" style="height: 400px"></div>
 	<script type="text/javascript">
