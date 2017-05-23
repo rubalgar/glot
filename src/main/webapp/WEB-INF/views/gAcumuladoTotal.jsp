@@ -50,9 +50,6 @@
 			</ul>
 		</div>
 	</nav>
-	<h1>
-		<fmt:message key="heading" />
-	</h1>
 	<p>
 		<c:out value="${model.now}" />
 	</p>
