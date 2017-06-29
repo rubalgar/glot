@@ -13,6 +13,7 @@ import org.apache.commons.logging.Log;
 import org.apache.commons.logging.LogFactory;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.context.ApplicationContext;
+import org.springframework.context.annotation.ComponentScan;
 import org.springframework.context.support.ClassPathXmlApplicationContext;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.PathVariable;
@@ -25,7 +26,7 @@ import com.ralonso.glot.services.AgregadoService;
 import com.ralonso.glot.services.FinanzaService;
 import com.ralonso.glot.util.Utils;
 
-
+@ComponentScan("com.ralonso.glot.services")
 @Controller
 public class GrafsController {
 
@@ -380,7 +381,7 @@ public class GrafsController {
 		
 		List<Finanza> tList = finanzaService.obtenerFinanzas();
 		myModel.put("f", tList);
-				
+	
 		return new ModelAndView("gFinanzasTotal", "model", myModel);
 	}
 	
