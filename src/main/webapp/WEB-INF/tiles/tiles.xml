@@ -9,8 +9,17 @@
 		<put-attribute name="footer" value="/WEB-INF/views/layout/footer.jsp" />
 	</definition>
 
+	<definition name="home" extends="defaultLayout">
+		<put-attribute name="body" value="/WEB-INF/views/gFinanzasTotal.jsp" />
+	</definition>
+
+
 	<definition name="gFinanzasTotal" extends="defaultLayout">
 		<put-attribute name="body" value="/WEB-INF/views/gFinanzasTotal.jsp" />
+	</definition>
+	
+	<definition name="gAcumuladoTotal" extends="defaultLayout">
+		<put-attribute name="body" value="/WEB-INF/views/gAcumuladoTotal.jsp" />
 	</definition>
 
 </tiles-definitions>

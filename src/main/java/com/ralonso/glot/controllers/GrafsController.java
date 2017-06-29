@@ -35,7 +35,10 @@ public class GrafsController {
 	 @Autowired
 	 private FinanzaService finanzaService;
 	
+	 @Autowired
+	 private AgregadoService agregadoService;
 
+	 
 	@RequestMapping(value = "/gImporteMensual")
 	public ModelAndView hImporteMensual(HttpServletRequest request, HttpServletResponse response)
 			throws ServletException, IOException {
@@ -329,10 +332,8 @@ public class GrafsController {
 	@RequestMapping(value = "/gAcumuladoTotal")
 	public ModelAndView hAcumuladoTotal(HttpServletRequest request, HttpServletResponse response)
 			throws ServletException, IOException {
-		ApplicationContext context = new ClassPathXmlApplicationContext("spring/applicationContext.xml");
-		AgregadoService agregadoService = (AgregadoService) context.getBean("agregadoService");
-
-		
+/*		ApplicationContext context = new ClassPathXmlApplicationContext("spring/applicationContext.xml");
+		AgregadoService agregadoService = (AgregadoService) context.getBean("agregadoService");*/
 		Map<String, Object> myModel = new HashMap<String, Object>();
 		
 		List<Agregado> tList = agregadoService.obtenerAgregadosTotal();
@@ -340,7 +341,6 @@ public class GrafsController {
 				
 		return new ModelAndView("gAcumuladoTotal", "model", myModel);
 	}
-	
 	
 	@RequestMapping(value = "/gMensual/{juego}")
 	public ModelAndView hMensual(@PathVariable String juego)
