@@ -26,7 +26,7 @@ public class JPAConfig {
         //String host = System.getenv("MYSQL_DB_HOST");
         datasource.setDriverClassName("com.mysql.jdbc.Driver");
         //String url = "jdbc:mysql://" + host + "/" + "glot";
-        datasource.setUrl("jdbc:mysql://172.31.58.12/glot");
+        datasource.setUrl("jdbc:mysql://172.30.160.87/glot");
         //datasource.setUrl(url);
         datasource.setUsername("glot");
         datasource.setPassword("tomatito");
