@@ -23,8 +23,11 @@ public class JPAConfig {
     @Bean(name = "dataSource")
     public DataSource dataSource() {
         BasicDataSource datasource = new BasicDataSource();
+        String host = System.getenv("OPENSHIFT_MYSQL_DB_HOST");
         datasource.setDriverClassName("com.mysql.jdbc.Driver");
-        datasource.setUrl("dbc:mysql://172.30.160.87/glot");
+        String url = "jdbc:mysql://" + host + "/" + "glot";
+        //datasource.setUrl("dbc:mysql://172.30.160.87/glot");
+        datasource.setUrl(url);
         datasource.setUsername("glot");
         datasource.setPassword("tomatito");
         return datasource;
