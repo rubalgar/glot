@@ -9,17 +9,48 @@
 		<put-attribute name="footer" value="/WEB-INF/views/layout/footer.jsp" />
 	</definition>
 
-	<definition name="home" extends="defaultLayout">
-		<put-attribute name="body" value="/WEB-INF/views/gFinanzasTotal.jsp" />
-	</definition>
+ 	<!-- <definition name="home" extends="defaultLayout">
+		<put-attribute name="body" value="" />
+	</definition> -->
+
 
 
 	<definition name="gFinanzasTotal" extends="defaultLayout">
 		<put-attribute name="body" value="/WEB-INF/views/gFinanzasTotal.jsp" />
 	</definition>
-	
+
+	<definition name="gMensualTotal" extends="defaultLayout">
+		<put-attribute name="body" value="/WEB-INF/views/gMensualTotal.jsp" />
+	</definition>
+
 	<definition name="gAcumuladoTotal" extends="defaultLayout">
 		<put-attribute name="body" value="/WEB-INF/views/gAcumuladoTotal.jsp" />
 	</definition>
+
+
+	<definition name="gImporteMensual" extends="defaultLayout">
+		<put-attribute name="body" value="/WEB-INF/views/gImporteMensual.jsp" />
+	</definition>
+
+	<definition name="gImporteAcumulado" extends="defaultLayout">
+		<put-attribute name="body" value="/WEB-INF/views/gImporteAcumulado.jsp" />
+	</definition>
+
+	<definition name="gPerdidaMensual" extends="defaultLayout">
+		<put-attribute name="body" value="/WEB-INF/views/gPerdidaMensual.jsp" />
+	</definition>
+	
+	<definition name="gPerdidaAcumulado" extends="defaultLayout">
+		<put-attribute name="body" value="/WEB-INF/views/gPerdidaAcumulado.jsp" />
+	</definition>
+	
+	<definition name="gPremMensual" extends="defaultLayout">
+		<put-attribute name="body" value="/WEB-INF/views/gPremMensual.jsp" />
+	</definition>
+	
+	<definition name="gPremAcumulado" extends="defaultLayout">
+		<put-attribute name="body" value="/WEB-INF/views/gPremAcumulado.jsp" />
+	</definition>
+
 
 </tiles-definitions>

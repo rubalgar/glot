@@ -42,9 +42,6 @@ public class GrafsController {
 	@RequestMapping(value = "/gImporteMensual")
 	public ModelAndView hImporteMensual(HttpServletRequest request, HttpServletResponse response)
 			throws ServletException, IOException {
-		ApplicationContext context = new ClassPathXmlApplicationContext("spring/applicationContext.xml");
-		AgregadoService agregadoService = (AgregadoService) context.getBean("agregadoService");
-
 		
 		Map<String, Object> myModel = new HashMap<String, Object>();
 		myModel.put("b", agregadoService.obtenerAgregadosPorJuego("BONOLOTO"));
@@ -66,9 +63,6 @@ public class GrafsController {
 	@RequestMapping(value = "/gPerdidaMensual")
 	public ModelAndView hPerdidaMensual(HttpServletRequest request, HttpServletResponse response)
 			throws ServletException, IOException {
-		ApplicationContext context = new ClassPathXmlApplicationContext("spring/applicationContext.xml");
-		AgregadoService agregadoService = (AgregadoService) context.getBean("agregadoService");
-
 		
 		Map<String, Object> myModel = new HashMap<String, Object>();
 		myModel.put("b", agregadoService.obtenerAgregadosPorJuego("BONOLOTO"));
@@ -90,9 +84,6 @@ public class GrafsController {
 	@RequestMapping(value = "/gPremMensual")
 	public ModelAndView hPremMensual(HttpServletRequest request, HttpServletResponse response)
 			throws ServletException, IOException {
-		ApplicationContext context = new ClassPathXmlApplicationContext("spring/applicationContext.xml");
-		AgregadoService agregadoService = (AgregadoService) context.getBean("agregadoService");
-
 		
 		Map<String, Object> myModel = new HashMap<String, Object>();
 		myModel.put("b", agregadoService.obtenerAgregadosPorJuego("BONOLOTO"));
@@ -114,10 +105,7 @@ public class GrafsController {
 	@RequestMapping(value = "/gImporteAcumulado")
 	public ModelAndView hImporteAcumulado(HttpServletRequest request, HttpServletResponse response)
 			throws ServletException, IOException {
-		ApplicationContext context = new ClassPathXmlApplicationContext("spring/applicationContext.xml");
-		AgregadoService agregadoService = (AgregadoService) context.getBean("agregadoService");
-
-		
+				
 		Map<String, Object> myModel = new HashMap<String, Object>();
 		
 		List<Agregado> bList = agregadoService.obtenerAgregadosPorJuego("BONOLOTO");
@@ -153,8 +141,6 @@ public class GrafsController {
 	@RequestMapping(value = "/gPremAcumulado")
 	public ModelAndView hPremAcumulado(HttpServletRequest request, HttpServletResponse response)
 			throws ServletException, IOException {
-		ApplicationContext context = new ClassPathXmlApplicationContext("spring/applicationContext.xml");
-		AgregadoService agregadoService = (AgregadoService) context.getBean("agregadoService");
 
 		
 		Map<String, Object> myModel = new HashMap<String, Object>();
@@ -190,9 +176,6 @@ public class GrafsController {
 	@RequestMapping(value = "/gPerdidaAcumulado")
 	public ModelAndView hPerdidaAcumulado(HttpServletRequest request, HttpServletResponse response)
 			throws ServletException, IOException {
-		ApplicationContext context = new ClassPathXmlApplicationContext("spring/applicationContext.xml");
-		AgregadoService agregadoService = (AgregadoService) context.getBean("agregadoService");
-
 		
 		Map<String, Object> myModel = new HashMap<String, Object>();
 		
@@ -230,9 +213,6 @@ public class GrafsController {
 	@RequestMapping(value = "/gImporteMensualTotal")
 	public ModelAndView hImporteMensualTotal(HttpServletRequest request, HttpServletResponse response)
 			throws ServletException, IOException {
-		ApplicationContext context = new ClassPathXmlApplicationContext("spring/applicationContext.xml");
-		AgregadoService agregadoService = (AgregadoService) context.getBean("agregadoService");
-
 		
 		Map<String, Object> myModel = new HashMap<String, Object>();
 		
@@ -244,9 +224,6 @@ public class GrafsController {
 	@RequestMapping(value = "/gPerdidaMensualTotal")
 	public ModelAndView hPerdidaMensualTotal(HttpServletRequest request, HttpServletResponse response)
 			throws ServletException, IOException {
-		ApplicationContext context = new ClassPathXmlApplicationContext("spring/applicationContext.xml");
-		AgregadoService agregadoService = (AgregadoService) context.getBean("agregadoService");
-
 		
 		Map<String, Object> myModel = new HashMap<String, Object>();
 		
@@ -259,9 +236,6 @@ public class GrafsController {
 	@RequestMapping(value = "/gImporteAcumuladoTotal")
 	public ModelAndView hImporteAcumuladoTotal(HttpServletRequest request, HttpServletResponse response)
 			throws ServletException, IOException {
-		ApplicationContext context = new ClassPathXmlApplicationContext("spring/applicationContext.xml");
-		AgregadoService agregadoService = (AgregadoService) context.getBean("agregadoService");
-
 		
 		Map<String, Object> myModel = new HashMap<String, Object>();
 		
@@ -273,9 +247,6 @@ public class GrafsController {
 	@RequestMapping(value = "/gPerdidaAcumuladoTotal")
 	public ModelAndView hPerdidaAcumuladoTotal(HttpServletRequest request, HttpServletResponse response)
 			throws ServletException, IOException {
-		ApplicationContext context = new ClassPathXmlApplicationContext("spring/applicationContext.xml");
-		AgregadoService agregadoService = (AgregadoService) context.getBean("agregadoService");
-
 		
 		Map<String, Object> myModel = new HashMap<String, Object>();
 		
@@ -288,9 +259,6 @@ public class GrafsController {
 	@RequestMapping(value = "/gPremMensualTotal")
 	public ModelAndView hPremMensualTotal(HttpServletRequest request, HttpServletResponse response)
 			throws ServletException, IOException {
-		ApplicationContext context = new ClassPathXmlApplicationContext("spring/applicationContext.xml");
-		AgregadoService agregadoService = (AgregadoService) context.getBean("agregadoService");
-
 		
 		Map<String, Object> myModel = new HashMap<String, Object>();
 		
@@ -303,9 +271,6 @@ public class GrafsController {
 	@RequestMapping(value = "/gPremAcumuladoTotal")
 	public ModelAndView hPremAcumuladoTotal(HttpServletRequest request, HttpServletResponse response)
 			throws ServletException, IOException {
-		ApplicationContext context = new ClassPathXmlApplicationContext("spring/applicationContext.xml");
-		AgregadoService agregadoService = (AgregadoService) context.getBean("agregadoService");
-
 		
 		Map<String, Object> myModel = new HashMap<String, Object>();
 		
@@ -317,10 +282,6 @@ public class GrafsController {
 	@RequestMapping(value = "/gMensualTotal")
 	public ModelAndView hMensualTotal(HttpServletRequest request, HttpServletResponse response)
 			throws ServletException, IOException {
-		ApplicationContext context = new ClassPathXmlApplicationContext("spring/applicationContext.xml");
-		AgregadoService agregadoService = (AgregadoService) context.getBean("agregadoService");
-
-		
 		Map<String, Object> myModel = new HashMap<String, Object>();
 		
 		List<Agregado> tList = agregadoService.obtenerAgregadosTotal();
@@ -332,8 +293,6 @@ public class GrafsController {
 	@RequestMapping(value = "/gAcumuladoTotal")
 	public ModelAndView hAcumuladoTotal(HttpServletRequest request, HttpServletResponse response)
 			throws ServletException, IOException {
-/*		ApplicationContext context = new ClassPathXmlApplicationContext("spring/applicationContext.xml");
-		AgregadoService agregadoService = (AgregadoService) context.getBean("agregadoService");*/
 		Map<String, Object> myModel = new HashMap<String, Object>();
 		
 		List<Agregado> tList = agregadoService.obtenerAgregadosTotal();
@@ -345,10 +304,6 @@ public class GrafsController {
 	@RequestMapping(value = "/gMensual/{juego}")
 	public ModelAndView hMensual(@PathVariable String juego)
 			throws ServletException, IOException {
-		ApplicationContext context = new ClassPathXmlApplicationContext("spring/applicationContext.xml");
-		AgregadoService agregadoService = (AgregadoService) context.getBean("agregadoService");
-
-		
 		Map<String, Object> myModel = new HashMap<String, Object>();
 		
 		List<Agregado> tList = agregadoService.obtenerAgregadosPorJuego(juego);
@@ -360,9 +315,6 @@ public class GrafsController {
 	@RequestMapping(value = "/gAcumulado/{juego}")
 	public ModelAndView hAcumulado(@PathVariable String juego)
 			throws ServletException, IOException {
-		ApplicationContext context = new ClassPathXmlApplicationContext("spring/applicationContext.xml");
-		AgregadoService agregadoService = (AgregadoService) context.getBean("agregadoService");
-
 		
 		Map<String, Object> myModel = new HashMap<String, Object>();
 		
@@ -375,8 +327,6 @@ public class GrafsController {
 	@RequestMapping(value = "/gFinanzasTotal")
 	public ModelAndView hFinanzasTotal(HttpServletRequest request, HttpServletResponse response)
 			throws ServletException, IOException {
-		/*ApplicationContext context = new ClassPathXmlApplicationContext("spring/applicationContext.xml");
-		FinanzaService finanzaService = (FinanzaService) context.getBean("finanzaService");*/
 		Map<String, Object> myModel = new HashMap<String, Object>();
 		
 		List<Finanza> tList = finanzaService.obtenerFinanzas();

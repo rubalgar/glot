@@ -1,18 +1,12 @@
-<%@ include file="/WEB-INF/views/include.jsp"%>
-<html>
-<head>
+<%@ taglib uri="http://tiles.apache.org/tags-tiles" prefix="tiles"%>
+<%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core"%>
+<%@ taglib prefix="fmt" uri="http://java.sun.com/jsp/jstl/fmt"%>
+
 <script src="<c:url value="/resources/js/highcharts.js" />"
 	type="text/javascript"></script>
-<title><fmt:message key="title" /></title>
-</head>
-<body>
-	<h1>
-		<fmt:message key="heading" />
-	</h1>
-	<p>
-		<c:out value="${model.now}" />
-	</p>
-	<br>
+<script src="<c:url value="/resources/js/jquery.min.js" />"></script>
+<script src="<c:url value="/resources/js/bootstrap.min.js" />"
+	type="text/javascript"></script>
 	<div id="chart" style="height: 400px"></div>
 	<script type="text/javascript">
 		Highcharts.chart('chart', {
@@ -98,6 +92,3 @@
 			]
 		});
 	</script>
-<a href="/glot">Volver</a>
-</body>
-</html>

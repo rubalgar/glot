@@ -23,11 +23,9 @@ public class JPAConfig {
     @Bean(name = "dataSource")
     public DataSource dataSource() {
         BasicDataSource datasource = new BasicDataSource();
-        //String host = System.getenv("MYSQL_DB_HOST");
         datasource.setDriverClassName("com.mysql.jdbc.Driver");
-        //String url = "jdbc:mysql://" + host + "/" + "glot";
-        datasource.setUrl("jdbc:mysql://172.30.160.87/glot");
-        //datasource.setUrl(url);
+        //datasource.setUrl("jdbc:mysql://172.30.160.87/glot");
+        datasource.setUrl("jdbc:mysql://localhost/glot");
         datasource.setUsername("glot");
         datasource.setPassword("tomatito");
         return datasource;
