@@ -5,7 +5,8 @@
 
 <head>
 
-<title><fmt:message key="title" /></title>
+<!-- <title><fmt:message key="title" /></title>-->
+<title>GLOT</title>
 
 <link href="<c:url value="/resources/css/bootstrap.min.css" />"
 	rel="stylesheet">

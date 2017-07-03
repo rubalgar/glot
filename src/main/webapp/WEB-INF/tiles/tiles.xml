@@ -9,9 +9,9 @@
 		<put-attribute name="footer" value="/WEB-INF/views/layout/footer.jsp" />
 	</definition>
 
- 	<!-- <definition name="home" extends="defaultLayout">
-		<put-attribute name="body" value="" />
-	</definition> -->
+ 	<definition name="home" extends="defaultLayout">
+		<put-attribute name="body" value="/WEB-INF/views/index.jsp" />
+	</definition>
 
 
 
