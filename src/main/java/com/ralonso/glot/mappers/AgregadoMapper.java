@@ -11,12 +11,12 @@ import com.ralonso.glot.domain.Agregado;
 public interface AgregadoMapper {
 	@Results({ @Result(property = "fecha", column = "fecha"), @Result(property = "juego", column = "juego"),
 			@Result(property = "importe", column = "importe"), @Result(property = "premio", column = "premio"),
-			@Result(property = "perdida", column = "perdida"), })
+			@Result(property = "perdida", column = "perdida"), @Result(property = "porcentaje", column = "porcentaje")})
 
 	@Select("SELECT fecha,juego,importe,premio,perdida FROM agregados order by fecha")
 	List<Agregado> getAgregados();
 	
-	@Select("SELECT fecha,juego,importe,premio,perdida FROM agregados where juego=#{juego} order by fecha")
+	@Select("SELECT fecha,juego,importe,premio,perdida,porcentaje FROM agregados where juego=#{juego} order by fecha")
 	List<Agregado> getAgregadosPorJuego(String juego);
 	
 	@Select("SELECT fecha,SUM(importe) as importe,SUM(perdida) as perdida, SUM(premio) as premio FROM agregados group by fecha order by fecha")

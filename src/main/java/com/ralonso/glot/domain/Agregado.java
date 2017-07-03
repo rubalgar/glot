@@ -8,6 +8,7 @@ public class Agregado {
     private double importe;
     private double premio;
     private double perdida;
+    private double porcentaje;
 	public Date getFecha() {
 		return fecha;
 	}
@@ -38,7 +39,11 @@ public class Agregado {
 	public void setPerdida(double perdida) {
 		this.perdida = perdida;
 	}
-    
-    
+	public double getPorcentaje() {
+		return porcentaje;
+	}
+	public void setPorcentaje(double porcentaje) {
+		this.porcentaje = porcentaje;
+	}
         
     }

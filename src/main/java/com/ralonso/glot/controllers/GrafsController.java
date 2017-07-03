@@ -50,7 +50,7 @@ public class GrafsController {
 		myModel.put("e", agregadoService.obtenerAgregadosPorJuego("EUROMILLON"));
 		myModel.put("nj", agregadoService.obtenerAgregadosPorJuego("NACIONAL JUEVES"));
 		myModel.put("ns", agregadoService.obtenerAgregadosPorJuego("NACIONAL SABADO"));
-		myModel.put("ne", agregadoService.obtenerAgregadosPorJuego("NACIONAL ESPECIAL"));
+		myModel.put("nes", agregadoService.obtenerAgregadosPorJuego("NACIONAL ESPECIAL SABADO"));
 		myModel.put("nex", agregadoService.obtenerAgregadosPorJuego("NACIONAL EXTRAORDINARIO"));
 		myModel.put("nni", agregadoService.obtenerAgregadosPorJuego("NACIONAL NIÑO"));
 		myModel.put("nna", agregadoService.obtenerAgregadosPorJuego("NACIONAL NAVIDAD"));
@@ -58,6 +58,27 @@ public class GrafsController {
 		myModel.put("o", agregadoService.obtenerAgregadosPorJuego("ONCE"));
 
 		return new ModelAndView("gImporteMensual", "model", myModel);
+	}
+	
+	@RequestMapping(value = "/gPorcentajeMensual")
+	public ModelAndView hPorcentajeMensual(HttpServletRequest request, HttpServletResponse response)
+			throws ServletException, IOException {
+		
+		Map<String, Object> myModel = new HashMap<String, Object>();
+		myModel.put("b", agregadoService.obtenerAgregadosPorJuego("BONOLOTO"));
+		myModel.put("p", agregadoService.obtenerAgregadosPorJuego("PRIMITIVA"));
+		myModel.put("g", agregadoService.obtenerAgregadosPorJuego("GORDO"));
+		myModel.put("e", agregadoService.obtenerAgregadosPorJuego("EUROMILLON"));
+		myModel.put("nj", agregadoService.obtenerAgregadosPorJuego("NACIONAL JUEVES"));
+		myModel.put("ns", agregadoService.obtenerAgregadosPorJuego("NACIONAL SABADO"));
+		myModel.put("nes", agregadoService.obtenerAgregadosPorJuego("NACIONAL ESPECIAL SABADO"));
+		myModel.put("nex", agregadoService.obtenerAgregadosPorJuego("NACIONAL EXTRAORDINARIO"));
+		myModel.put("nni", agregadoService.obtenerAgregadosPorJuego("NACIONAL NIÑO"));
+		myModel.put("nna", agregadoService.obtenerAgregadosPorJuego("NACIONAL NAVIDAD"));
+		myModel.put("q", agregadoService.obtenerAgregadosPorJuego("QUINIELA"));
+		myModel.put("o", agregadoService.obtenerAgregadosPorJuego("ONCE"));
+
+		return new ModelAndView("gPorcentajeMensual", "model", myModel);
 	}
 
 	@RequestMapping(value = "/gPerdidaMensual")
@@ -71,7 +92,7 @@ public class GrafsController {
 		myModel.put("e", agregadoService.obtenerAgregadosPorJuego("EUROMILLON"));
 		myModel.put("nj", agregadoService.obtenerAgregadosPorJuego("NACIONAL JUEVES"));
 		myModel.put("ns", agregadoService.obtenerAgregadosPorJuego("NACIONAL SABADO"));
-		myModel.put("ne", agregadoService.obtenerAgregadosPorJuego("NACIONAL ESPECIAL"));
+		myModel.put("nes", agregadoService.obtenerAgregadosPorJuego("NACIONAL ESPECIAL SABADO"));
 		myModel.put("nex", agregadoService.obtenerAgregadosPorJuego("NACIONAL EXTRAORDINARIO"));
 		myModel.put("nni", agregadoService.obtenerAgregadosPorJuego("NACIONAL NIÑO"));
 		myModel.put("nna", agregadoService.obtenerAgregadosPorJuego("NACIONAL NAVIDAD"));
@@ -92,7 +113,7 @@ public class GrafsController {
 		myModel.put("e", agregadoService.obtenerAgregadosPorJuego("EUROMILLON"));
 		myModel.put("nj", agregadoService.obtenerAgregadosPorJuego("NACIONAL JUEVES"));
 		myModel.put("ns", agregadoService.obtenerAgregadosPorJuego("NACIONAL SABADO"));
-		myModel.put("ne", agregadoService.obtenerAgregadosPorJuego("NACIONAL ESPECIAL"));
+		myModel.put("nes", agregadoService.obtenerAgregadosPorJuego("NACIONAL ESPECIAL SABADO"));
 		myModel.put("nex", agregadoService.obtenerAgregadosPorJuego("NACIONAL EXTRAORDINARIO"));
 		myModel.put("nni", agregadoService.obtenerAgregadosPorJuego("NACIONAL NIÑO"));
 		myModel.put("nna", agregadoService.obtenerAgregadosPorJuego("NACIONAL NAVIDAD"));
@@ -115,7 +136,7 @@ public class GrafsController {
 		List<Agregado> eList = agregadoService.obtenerAgregadosPorJuego("EUROMILLON");
 		List<Agregado> njList = agregadoService.obtenerAgregadosPorJuego("NACIONAL JUEVES");
 		List<Agregado> nsList = agregadoService.obtenerAgregadosPorJuego("NACIONAL SABADO");
-		List<Agregado> nesList = agregadoService.obtenerAgregadosPorJuego("NACIONAL ESPECIAL");
+		List<Agregado> nesList = agregadoService.obtenerAgregadosPorJuego("NACIONAL ESPECIAL SABADO");
 		List<Agregado> nexList = agregadoService.obtenerAgregadosPorJuego("NACIONAL EXTRAORDINARIO");
 		List<Agregado> oList = agregadoService.obtenerAgregadosPorJuego("ONCE");
 			
@@ -152,7 +173,7 @@ public class GrafsController {
 		List<Agregado> eList = agregadoService.obtenerAgregadosPorJuego("EUROMILLON");
 		List<Agregado> njList = agregadoService.obtenerAgregadosPorJuego("NACIONAL JUEVES");
 		List<Agregado> nsList = agregadoService.obtenerAgregadosPorJuego("NACIONAL SABADO");
-		List<Agregado> nesList = agregadoService.obtenerAgregadosPorJuego("NACIONAL ESPECIAL");
+		List<Agregado> nesList = agregadoService.obtenerAgregadosPorJuego("NACIONAL ESPECIAL SABADO");
 		List<Agregado> nexList = agregadoService.obtenerAgregadosPorJuego("NACIONAL EXTRAORDINARIO");
 		List<Agregado> oList = agregadoService.obtenerAgregadosPorJuego("ONCE");
 		
@@ -186,7 +207,7 @@ public class GrafsController {
 		List<Agregado> eList = agregadoService.obtenerAgregadosPorJuego("EUROMILLON");
 		List<Agregado> njList = agregadoService.obtenerAgregadosPorJuego("NACIONAL JUEVES");
 		List<Agregado> nsList = agregadoService.obtenerAgregadosPorJuego("NACIONAL SABADO");
-		List<Agregado> nesList = agregadoService.obtenerAgregadosPorJuego("NACIONAL ESPECIAL");
+		List<Agregado> nesList = agregadoService.obtenerAgregadosPorJuego("NACIONAL ESPECIAL SABADO");
 		List<Agregado> nexList = agregadoService.obtenerAgregadosPorJuego("NACIONAL EXTRAORDINARIO");
 		List<Agregado> oList = agregadoService.obtenerAgregadosPorJuego("ONCE");
 		

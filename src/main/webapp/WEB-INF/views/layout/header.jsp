@@ -31,8 +31,8 @@
 						<li><a href="<%=request.getContextPath()%>/gAcumulado/NACIONAL JUEVES">NJ Acumulado</a></li>
 						<li><a href="<%=request.getContextPath()%>/gMensual/NACIONAL SABADO">NS Mensual</a></li>
 						<li><a href="<%=request.getContextPath()%>/gAcumulado/NACIONAL SABADO">NS Acumulado</a></li>
-						<li><a href="<%=request.getContextPath()%>/gMensual/NACIONAL ESPECIAL">NES Mensual</a></li>
-						<li><a href="<%=request.getContextPath()%>/gAcumulado/NACIONAL ESPECIAL">NES Acumulado</a></li>
+						<li><a href="<%=request.getContextPath()%>/gMensual/NACIONAL ESPECIAL SABADO">NES Mensual</a></li>
+						<li><a href="<%=request.getContextPath()%>/gAcumulado/NACIONAL ESPECIAL SABADO">NES Acumulado</a></li>
 						<li><a href="<%=request.getContextPath()%>/gMensual/NACIONAL EXTRAORDINARIO">NEX Mensual</a></li>
 						<li><a href="<%=request.getContextPath()%>/gAcumulado/NACIONAL EXTRAORDINARIO">NEX Acumulado</a></li>
 				</ul></li>
@@ -46,7 +46,7 @@
 						<li><a href="<%=request.getContextPath()%>/gPerdidaAcumulado">Perdida Acumulado</a></li>
 						<li><a href="<%=request.getContextPath()%>/gPremMensual">Premio Mensual</a></li>
 						<li><a href="<%=request.getContextPath()%>/gPremAcumulado">Premio Acumulado</a></li>
-						
+						<li><a href="<%=request.getContextPath()%>/gPorcentajeMensual">Porcentaje</a></li>
 					</ul></li>
 <!--  				<li><a class="dropdown-toggle" data-toggle="dropdown" href="#">Tablas<span
 						class="caret"></span></a>
