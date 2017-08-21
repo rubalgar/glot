@@ -11,11 +11,11 @@ import com.ralonso.glot.domain.Finanza;
 public interface FinanzaMapper {
 	@Results({ @Result(property = "fecha", column = "fecha"), @Result(property = "ahorro", column = "ahorro"),
 			@Result(property = "depositoCoinc", column = "deposito_coinc"), @Result(property = "depositoIng", column = "deposito_ing"),
-			@Result(property = "cuentaNaranja", column = "cuenta_naranja"), @Result(property = "cuentaNomina", column = "cuenta_nomina"),
+			@Result(property = "cuentaNaranjaPrincipal", column = "cuenta_naranja_principal"), @Result(property = "cuentaNaranjaSecundaria", column = "cuenta_naranja_secundaria"), @Result(property = "cuentaNomina", column = "cuenta_nomina"),
 			@Result(property = "planPensiones", column = "plan_pensiones"), @Result(property = "hipoteca", column = "hipoteca"),
 			@Result(property = "deudas", column = "deudas"),})
 
-	@Select("SELECT fecha,ahorro,deposito_coinc,deposito_ing,cuenta_naranja,cuenta_nomina,plan_pensiones,hipoteca,deudas FROM finanzas order by fecha")
+	@Select("SELECT fecha,ahorro,deposito_coinc,deposito_ing,cuenta_naranja_principal, cuenta_naranja_secundaria, cuenta_nomina,plan_pensiones,hipoteca,deudas FROM finanzas order by fecha")
 	List<Finanza> getFinanzas();
 	
 }

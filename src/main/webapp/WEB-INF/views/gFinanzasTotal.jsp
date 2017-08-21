@@ -60,9 +60,15 @@
 					</c:forEach>],
 			} ,
 			{
-				name : 'Cuenta Naranja',
+				name : 'Cuenta Naranja Principal',
 				data : [ <c:forEach var="f" items="${model.f}" varStatus="loop">
-						[${f.cuentaNaranja}]<c:if test="${!loop.last}">,</c:if>
+						[${f.cuentaNaranjaPrincipal}]<c:if test="${!loop.last}">,</c:if>
+					</c:forEach>],
+			} ,
+			{
+				name : 'Cuenta Naranja Secundaria',
+				data : [ <c:forEach var="f" items="${model.f}" varStatus="loop">
+						[${f.cuentaNaranjaSecundaria}]<c:if test="${!loop.last}">,</c:if>
 					</c:forEach>],
 			} ,
 			{

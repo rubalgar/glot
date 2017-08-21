@@ -7,7 +7,8 @@ public class Finanza {
     private double ahorro;
     private double depositoCoinc;
     private double depositoIng;
-    private double cuentaNaranja;
+    private double cuentaNaranjaPrincipal;
+    private double cuentaNaranjaSecundaria;
     private double cuentaNomina;
     private double planPensiones;
     private double hipoteca;
@@ -36,11 +37,11 @@ public class Finanza {
 	public void setDepositoIng(double depositoIng) {
 		this.depositoIng = depositoIng;
 	}
-	public double getCuentaNaranja() {
-		return cuentaNaranja;
+	public double getCuentaNaranjaPrincipal() {
+		return cuentaNaranjaPrincipal;
 	}
-	public void setCuentaNaranja(double cuentaNaranja) {
-		this.cuentaNaranja = cuentaNaranja;
+	public void setCuentaNaranjaPrincipal(double cuentaNaranja) {
+		this.cuentaNaranjaPrincipal = cuentaNaranja;
 	}
 	public double getCuentaNomina() {
 		return cuentaNomina;
@@ -66,7 +67,11 @@ public class Finanza {
 	public void setDeudas(double deudas) {
 		this.deudas = deudas;
 	}
-    
-	
+	public double getCuentaNaranjaSecundaria() {
+		return cuentaNaranjaSecundaria;
+	}
+	public void setCuentaNaranjaSecundaria(double cuentaNaranjaSecundaria) {
+		this.cuentaNaranjaSecundaria = cuentaNaranjaSecundaria;
+	}
         
     }
