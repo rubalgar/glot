@@ -53,7 +53,7 @@
 			} ,
 			{
 				name : 'Q',
-				data : [ <c:forEach var="q" items="${model.a}" varStatus="loop">
+				data : [ <c:forEach var="q" items="${model.q}" varStatus="loop">
 						[${q.premio}]<c:if test="${!loop.last}">,</c:if>
 					</c:forEach>],
 			} ,
