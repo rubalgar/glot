@@ -95,6 +95,19 @@
 						[${f.deudas}]<c:if test="${!loop.last}">,</c:if>
 					</c:forEach>],
 			} ,
+			{
+				name : 'Ahorro Real',
+				data : [ <c:forEach var="f" items="${model.f}" varStatus="loop">
+						[${f.ahorroReal}]<c:if test="${!loop.last}">,</c:if>
+					</c:forEach>],
+			} ,
+			{
+				name : 'Inversion',
+				data : [ <c:forEach var="f" items="${model.f}" varStatus="loop">
+						[${f.inversion}]<c:if test="${!loop.last}">,</c:if>
+					</c:forEach>],
+			} ,
+			
 			]
 		});
 	</script>

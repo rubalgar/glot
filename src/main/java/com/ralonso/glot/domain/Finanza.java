@@ -13,6 +13,9 @@ public class Finanza {
     private double planPensiones;
     private double hipoteca;
     private double deudas;
+    private double ahorroReal;
+    private double inversion;
+    
 	public Date getFecha() {
 		return fecha;
 	}
@@ -73,5 +76,16 @@ public class Finanza {
 	public void setCuentaNaranjaSecundaria(double cuentaNaranjaSecundaria) {
 		this.cuentaNaranjaSecundaria = cuentaNaranjaSecundaria;
 	}
-        
+	public double getAhorroReal() {
+		return ahorroReal;
+	}
+	public void setAhorroReal(double ahorroReal) {
+		this.ahorroReal = ahorroReal;
+	}
+	public double getInversion() {
+		return inversion;
+	}
+	public void setInversion(double inversion) {
+		this.inversion = inversion;
+	}
     }
