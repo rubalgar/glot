@@ -35,6 +35,9 @@
 						<li><a href="<%=request.getContextPath()%>/gAcumulado/NACIONAL ESPECIAL SABADO">NES Acumulado</a></li>
 						<li><a href="<%=request.getContextPath()%>/gMensual/NACIONAL EXTRAORDINARIO">NEX Mensual</a></li>
 						<li><a href="<%=request.getContextPath()%>/gAcumulado/NACIONAL EXTRAORDINARIO">NEX Acumulado</a></li>
+						<li><a href="<%=request.getContextPath()%>/gMensual/EUROMILLON">E Mensual</a></li>
+						<li><a href="<%=request.getContextPath()%>/gAcumulado/EUROMILLON">E Acumulado</a></li>
+						
 				</ul></li>
 				
 				<li><a class="dropdown-toggle" data-toggle="dropdown" href="#">Comparativa<span
