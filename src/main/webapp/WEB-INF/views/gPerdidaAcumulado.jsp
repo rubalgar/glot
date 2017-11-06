@@ -89,6 +89,12 @@
 						[${nex.perdida}]<c:if test="${!loop.last}">,</c:if>
 					</c:forEach>],
 			} ,
+			{
+				name : 'E',
+				data : [ <c:forEach var="e" items="${model.e}" varStatus="loop">
+						[${e.perdida}]<c:if test="${!loop.last}">,</c:if>
+					</c:forEach>],
+			} ,
 
 
 			]
